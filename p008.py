@@ -1,5 +1,6 @@
 # Largest product in a series
 
+from functools import reduce
 from operator import mul
 
 num_str = "73167176531330624919225119674426574742355349194934\
@@ -24,10 +25,10 @@ num_str = "73167176531330624919225119674426574742355349194934\
 71636269561882670428252483600823257530420752963450"
 
 m = 0
-digits = 13 # original : 13 / ko: 5
-
+digits = 13  # original : 13 / ko: 5
 for i in range(1001-digits):
     if num_str[i:i+digits].find('0') < 0:
         p = reduce(mul, map(int, num_str[i:i+digits]))
-        if p > m: m = p
-print m
+        if p > m:
+            m = p
+print(m)
