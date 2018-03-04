@@ -1,4 +1,4 @@
-# Project Euler
+# PROJECT EULER
 
-A collection of [project euler](https://projecteuler.net) solutions.
-> *Those source codes are not optimized code (not best solutions)*
+A collection of solutions for [project euler](https://projecteuler.net)
+> These might not be the best solutions
