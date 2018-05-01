@@ -18,7 +18,6 @@ triangle = """
 04 62 98 27 23 09 70 98 73 93 38 53 60 04 23
 """
 
-
 triangle_leaves = []
 for line in triangle.strip().splitlines():
     triangle_leaves.append([int(i) for i in line.split()])
